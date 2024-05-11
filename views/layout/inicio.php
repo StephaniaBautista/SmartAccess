@@ -1,0 +1,168 @@
+<!--- Header de la navegacion -->
+<header class="header fijo">
+    <div class="svgs contenedora">
+        <div class="logo">
+            <a href="/">
+                <img src="build/img/Logo-SmartAccess.png" alt="logo" class="logo"/>
+            </a>
+        </div>
+    </div>
+    <nav class="navegacion">
+        <div class="enlaces-container uno">
+            <a href="/" class="navegacion_enlace">Inicio</a>
+            <a href=<?php
+                if (isset($_SESSION['login'])) {
+                  echo '"/cuenta"';
+                } else{
+                    echo '"/login"';
+                } 
+                ?> class="navegacion_enlace inicio-sesion">Inicia Sesión
+            </a>
+            <a href="/contacto">Contacto</a>
+        </div>
+    </nav>
+</header>
+<!-- Cierre del header -->
+
+
+<!--Slider-->
+<div class="contenedor-slider">
+      <div class="slider-contenedor">
+        <div class="contenido-slider">
+          <section>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Consequuntur porro delectus culpa dolores odio sit impedit
+              ratione repellat earum doloribus error ad rem, neque
+              perspiciatis nihil blanditiis quasi esse? Fugit.
+            </p>
+          </section>
+          <img src="build/img/icono-ia-1.png" alt="IA" />
+        </div>
+        <div class="contenido-slider">
+          <section>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Consequuntur porro delectus culpa dolores odio sit impedit
+              ratione repellat earum doloribus error ad rem, neque
+              perspiciatis nihil blanditiis quasi esse? Fugit.
+            </p>
+          </section>
+          <img src="build/img/icono-ia-2.png" alt="food truck" />
+        </div>
+        <div class="contenido-slider">
+          <section>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Consequuntur porro delectus culpa dolores odio sit impedit
+              ratione repellat earum doloribus error ad rem, neque
+              perspiciatis nihil blanditiis quasi esse? Fugit.
+            </p>
+          </section>
+          <img src="build/img/icono-ia-3png.png" alt="food truck" />
+        </div>
+        <div class="contenido-slider">
+          <section>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Consequuntur porro delectus culpa dolores odio sit impedit
+              ratione repellat earum doloribus error ad rem, neque
+              perspiciatis nihil blanditiis quasi esse? Fugit.
+            </p>
+          </section>
+          <img src="build/img/icono-ia-4.png" alt="food truck" />
+        </div>
+      </div>
+</div>
+
+<!--Cierre del Slider-->
+
+<!--Información Página-->
+<main class="contenedor main">
+    <!-- Escuelas -->
+    <section class="info-escuela">
+        <h2 class="titulo-info-escuela">Nosotros trabajamos con:</h2>
+        <div class="contenedor-escuelas">
+            <div class="contenedor-escuela">
+                <h3>Instituto tecnológico de Tlalnepantla</h3>
+                <div class="contenedor-imagen-escuela">
+                    <img src="build/img/ittlaLogo.png" alt="ittla">
+                </div>
+            </div> <!--Cierre contenedor escuela -->
+            <div class="contenedor-escuela">
+                <h3>Instituto tecnológico de Tlalnepantla</h3>
+                <div class="contenedor-imagen-escuela">
+                    <img src="build/img/ittlaLogo.png" alt="ittla">
+                </div>
+            </div> <!--Cierre contenedor escuela -->
+            <div class="contenedor-escuela">
+                <h3>Instituto tecnológico de Tlalnepantla</h3>
+                <div class="contenedor-imagen-escuela">
+                    <img src="build/img/ittlaLogo.png" alt="ittla">
+                </div>
+            </div> <!--Cierre contenedor escuela -->
+            <div class="contenedor-escuela">
+                <h3>Instituto tecnológico de Tlalnepantla</h3>
+                <div class="contenedor-imagen-escuela">
+                    <img src="build/img/ittlaLogo.png" alt="ittla">
+                </div>
+            </div> <!--Cierre contenedor escuela -->
+        </div>
+    </section> 
+    <!-- Escuela cierre-->
+
+    <!-- Deportes -->
+    <section class="seccion-evento deportes">
+        <div class="contenedor contenedor-cita">
+            <div class="contenedor-cita-imagen">
+            <img src="build/img/futbol.jpg" alt="ittla">
+            </div>
+            <div class="contenedor-cita-texto">
+                <h3 class="titulo-texto-cita">Información de Eventos deportivos</h3>
+                <p class="texto-cita">Torneos de fútbol relámpago</p>
+                <span>Diversión en el campo</span>
+                <p class="texto-cita">Fecha y hora: Sábado, 15 de mayo 2024, de 9:00AM a 2:00PM</p>
+                <p class="texto-cita">Lugar:Campo Municipal</p> <span>"Estadio del sol"</span>
+            </div>
+        </div>
+        <p>Únete a nosotros para un torneo de fútbol rápido y emocionante. Equipos de cuatro jugadores que competirán en partidos cortos de 10 minutos. Habrá mucha comida, música y diversión para toda la familia</p>
+        <a href="#" class="btn-azul">Inscribete ahora</a>
+    </section>
+    <!-- Deportes cierre-->
+
+    <!-- Deportes -->
+    <section class="seccion-evento cultural">
+        <div class="contenedor-cita">
+            <div class="contenedor-cita-imagen">
+                <img src="build/img/musica.jpg" alt="ittla">
+            </div>
+            <div class="contenedor-cita-texto">
+                <h3 class="titulo-texto-cita">Información de Eventos Culturales</h3>
+                <p class="texto-cita">Evento Musical</p>
+                <span>Noche de Ritmos del Mundo</span>
+                <p class="texto-cita">Fecha y hora: Sábado, 5 de mayo 2024, de 11:00AM a 2:00PM</p>
+                <p class="texto-cita">Lugar:Campo Municipal</p> <span>"Estadio del sol"</span>
+            </div>
+        </div>
+    <p>Únete a nosotros para demostrar tus talentos músicales. Participa en solitario, duo o banda para ganar increíbles premios. Habrá mucha comida, música y diversión para toda la familia.</p>
+    <a href="#" class="btn-azul">Inscribete ahora</a>
+</section>
+<!-- Deportes cierre-->
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="redes-sociales-logos">
+        <div class="contenedor-social">
+            <a href="https://www.facebook.com/stephania.bautista.19" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/ArlequinThe" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/the_arlequinblack/" class="fa fa-instagram"></a>
+        </div>
+        <p class="copyright">Smart Access Todos los derechos Reservados &copy;</p>
+    </div>
+</footer>
+
+<?php 
+        $script = "
+        <script src='build/js/app.js'></script>
+        ";
+?>
